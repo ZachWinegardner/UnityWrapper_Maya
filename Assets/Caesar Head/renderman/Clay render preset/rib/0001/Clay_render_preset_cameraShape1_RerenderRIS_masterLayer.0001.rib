@@ -1,0 +1,417 @@
+##RenderMan RIB
+#Created by RenderMan for Maya 20.7 (@1571626 Jan 26 2016)
+#Thu Feb 25 4:10:16 PM Eastern Standard Time 2016
+version 3.04
+Option "ribparse" "string varsubst" [""]
+Option "ribparse" "string varsubst" ["$"]
+IfBegin "!defined(RMSPROJ_FROM_ENV)" 
+	Option "user" "string RMSPROJ" ["z:/maya/projects/Caesar Head/"]
+IfEnd 
+IfBegin "!defined(RMSTREE)" 
+	Option "user" "string RMSTREE" ["C:/Program Files/Pixar/RenderManStudio-20.7-maya2015/"]
+IfEnd 
+Option "searchpath" "string resource" ["${RMSPROJ}:@"]
+Option "searchpath" "string archive" ["${RMSPROJ}:."]
+Option "searchpath" "string display" ["${RMSTREE}/bin:@"]
+Option "searchpath" "string shader" ["${RMSPROJ}:${RMSTREE}/lib/shaders/:@"]
+Option "searchpath" "string texture" ["${RMSPROJ}:${RMSTREE}/lib/textures/:@"]
+Option "searchpath" "string rixplugin" ["${RMSTREE}/lib/shaders/:@"]
+Option "searchpath" "string dirmap" [""]
+Option "searchpath" "string rifilter" ["${RMSTREE}/lib/rif/:${RMANTREE}/etc:@"]
+Option "searchpath" "string procedural" ["${RMSTREE}/lib/plugins/:${RMSTREE}/lib/plugins:${RMANTREE}/etc:@"]
+##rifcontrol insert begin -rif RLFInjector -rifend
+FrameBegin 1
+	Identity 
+	Option "user" "string pass_id" ["Clay_render_preset_cameraShape1_RerenderRIS"] "string pass_phase" ["/Job/Frames/Images"] "string pass_class" ["RerenderRIS"] "string pass_flavor" [""] "string pass_crew" [""] "string pass_camera_name" ["Clay_render_preset:cameraShape1"] "string pass_camera_flavor" [""] "string pass_layer" [""] "string renderer" ["RIS"] "int pass_features_trace" [1] "int input_color_profile" [0]
+	Option "trace" "int maxdepth" [10]
+	PixelVariance 0.01
+	Option "bucket" "string order" ["spiral"]
+	Option "limits" "int[2] bucketsize" [16 16]
+	Option "limits" "int gridsize" [256]
+	Option "trace" "float decimationrate" [1]
+	Option "hair" "float minwidth" [0.5]
+	Option "statistics" "int level" [1]
+	Option "statistics" "string filename" ["stdout"]
+	Option "statistics" "string xmlfilename" ["renderman/Clay render preset/rib/0001/Clay_render_preset_cameraShape1_RerenderRIS.0001.xml"]
+	Option "limits" "color zthreshold" [0.996 0.996 0.996]
+	Option "limits" "color othreshold" [0.996 0.996 0.996]
+	Option "limits" "int texturememory" [2097152]
+	Option "limits" "int geocachememory" [2097152]
+	Option "limits" "int proceduralmemory" [0]
+	Option "limits" "int deepshadowtiles" [1000]
+	Option "limits" "int deepshadowmemory" [102400]
+	Option "limits" "int radiositycachememory" [102400]
+	Option "limits" "int brickmemory" [10240]
+	Option "shading" "int directlightinglocalizedsampling" [0]
+	Option "limits" "int opacitycachememory" [1024000]
+	Option "shading" "int directlightingsamples" [4]
+	CropWindow 0 1 0 1
+	Option "photon" "string lifetime" ["transient"]
+	Option "photon" "int emit" [0]
+	Hider "raytrace" "int adaptall" [0] "string integrationmode" ["path"] "int incremental" [1] "string pixelfiltermode" ["weighted"] "string samplemode" [""] "int minsamples" [0] "int maxsamples" [16]
+	Integrator "PxrPathTracer" "PxrPathTracer" "int maxPathLength" [10] "string sampleMode" ["bxdf"] "int numLightSamples" [8] "int numBxdfSamples" [8] "int numIndirectSamples" [1] "int numDiffuseSamples" [1] "int numSpecularSamples" [1] "int numSubsurfaceSamples" [1] "int numRefractionSamples" [1] "int rouletteDepth" [4] "float rouletteThreshold" [0.2] "string imagePlaneSubset" ["rman__imageplane"] "int clampDepth" [2] "float clampLuminance" [10] "int allowCaustics" [0]
+	Format 960 540 1
+	Display "renderman/Clay render preset/images/masterLayer/Clay_render_preset_cameraShape1/Clay render preset" "it" "rgba" "string filter" ["gaussian"] "float[2] filterwidth" [2 2] "int[4] quantize" [0 0 0 0] "float dither" [0] "float[2] exposure" [1 1] "float[3] remap" [0 0 0] "string connection" ["-launchURI C:/Program%20Files/Pixar/RenderManStudio-20.7-maya2015/bin/it"] "string dspyParams" [" itOpenHandler {::ice::startTimer;};;; itCloseHandler {::ice::endTimer %arglist; };;; dspyRender -renderer preview -time 1 -crop 0 1 0 1 -port 61251 -context \"_preview\" -notes \"(Thu Feb 25 4:10:15 PM Eastern Standard Time 2016)\nPxrPathTracer  MaxSamples 512  Mode bxdf  Light 8  Bsdf 8  Indir 1\""]
+	#Camera Clay_render_preset:cameraShape1
+	Clipping 3.048 304800
+	Projection "perspective" "fov" [54.4322]
+	ScreenWindow -1 1 -0.5625 0.5625
+	Shutter 0 0
+	ConcatTransform [ 0.968583 -0.0130161 0.248349 -2.3209e-010  -2.69612e-008 0.99863 0.052336 -1.03927e-009  0.24869 0.0506917 -0.967256 9.03928e-010  -3.91572 -30.6225 30.7047 1 ]
+	Camera "world" "float[2] shutteropening" [0 1]
+	Option "user" "color camera_bg" [0 0 0] "float camera_bga" [0]
+	Imager "background" "color color" [0 0 0] "float alpha" [0]
+	ResourceBegin 
+		WorldBegin 
+			##RLF ScopeBegin -name Clay_render_preset_cameraShape1_RerenderRIS -localbinding 1 -rlffilename renderman/Clay render preset/rib/0001/Clay_render_preset_cameraShape1_RerenderRIS_masterLayer.0001.rlf -namespace 
+			ScopedCoordinateSystem "world_ref"
+			Attribute "user" "float[17] Clay_render_preset:place2dTexture1" [1 1 0 0 0
+				0 0 0 1 1 1 1 0 0 0 0 0]
+			Attribute "user" "float[17] place2dTexture5" [1 1 0 0 0
+				0 0 0 1 1 1 1 0 0 0 0 0]
+			Attribute "user" "float[17] place2dTexture2" [1 1 0 0 0
+				0 0 0 1 1 1 1 0 0 0 0 0]
+			Attribute "user" "float[17] place2dTexture3" [1 1 0 0 0
+				0 0 0 1 1 1 1 0 0 0 0 0]
+			Attribute "user" "float[17] place2dTexture4" [1 1 0 0 0
+				0 0 0 1 1 1 1 0 0 0 0 0]
+			Attribute "visibility" "int transmission" [1] "int indirect" [1]
+			Bxdf "PxrDiffuse" "default" 
+			Attribute "user" "int shader_bindingstrength" [0]
+			Attribute "trace" "int maxdiffusedepth" [1] "int maxspeculardepth" [2] "int samplemotion" [1] "float autobias" [1] "float bias" [0.001] "int displacements" [1]
+			Attribute "dice" "string referencecamera" ["worldcamera"]
+			ShadingRate 1
+			Attribute "displacementbound" "string coordinatesystem" ["shader"] "float sphere" [0]
+			Attribute "photon" "string causticmap" [""] "string globalmap" [""]
+			AttributeBegin 
+				Attribute "identifier" "string name" ["PxrStdAreaLightShape1"]
+				Transform [ 2.39038 0.307814 3.83112 0  0.307814 4.4818 -0.55215 0  -3.83112 0.55215 2.34602 0  -34.6973 35.7177 22.1462 1 ]
+				Bxdf "PxrLightEmission" "visualizer" "string __instanceid" ["PxrStdAreaLightShape1_visualizer"]
+				IfBegin "!defined(user:shader_bindingstrength) || $user:shader_bindingstrength <= 0" 
+					ShadingRate 5
+					Surface "renderman/Clay render preset/shaders/PxrStdAreaLightShape1_rfm" "float rman__LightPrimaryVisibility" [0] "string rman__Shape" ["rect"] "float exposure" [9.55056] "color lightColor" [1 1 1] "float enableTemperature" [0] "float temperature" [6500] "float enableEmissionMap" [0] "string rman__EmissionMap" [""] "float linearizeEmissionMap" [0] "float[2] rman__ProceduralResolution" [1024 1024] 
+						"float emissionMapScaleS" [1] "float emissionMapScaleT" [1] "float emissionMapOffsetS" [0] "float emissionMapOffsetT" [0] "color specAmount" [1 1 1] "color diffAmount" [1 1 1] "float fixedSampleCount" [-1] "float importance" [1] 
+						"float coneAngle" [20] "float penumbraAngle" [5] "float penumbraExponent" [0] "string profileMap" [""] "string iesProfile" [""] "float profileRange" [-1] "float distributionAngle" [90] "float angularVisibility" [1] "float enableBarnDoors" [0] "float barnTop" [0] "float barnBottom" [0] "float barnLeft" [0] "float barnRight" [0] 
+						"string barnDoorMap" ["default.tex"] "float enableShadows" [1] "color shadowColor" [0 0 0] "float adaptiveShadows" [1] "float shadowMaxDist" [-1] "float shadowTraceBias" [-1] "string shadowSubset" [""] "string shadowExcludeSubset" [""] "float areaNormalize" [1] "string __group" [""] "float intensity" [1] "__instanceid" ["renderman/Clay render preset/shaders/PxrStdAreaLightShape1_rfm_0"]
+					ShadingRate 5
+					AreaLightSource "renderman/Clay render preset/shaders/PxrStdAreaLightShape1_rfm" "PxrStdAreaLightShape1" "float rman__LightPrimaryVisibility" [0] "string rman__Shape" ["rect"] "float exposure" [9.55056] "color lightColor" [1 1 1] "float enableTemperature" [0] "float temperature" [6500] "float enableEmissionMap" [0] "string rman__EmissionMap" [""] "float linearizeEmissionMap" [0] "float[2] rman__ProceduralResolution" [1024 1024] 
+						"float emissionMapScaleS" [1] "float emissionMapScaleT" [1] "float emissionMapOffsetS" [0] "float emissionMapOffsetT" [0] "color specAmount" [1 1 1] "color diffAmount" [1 1 1] "float fixedSampleCount" [-1] "float importance" [1] 
+						"float coneAngle" [20] "float penumbraAngle" [5] "float penumbraExponent" [0] "string profileMap" [""] "string iesProfile" [""] "float profileRange" [-1] "float distributionAngle" [90] "float angularVisibility" [1] "float enableBarnDoors" [0] "float barnTop" [0] "float barnBottom" [0] "float barnLeft" [0] "float barnRight" [0] 
+						"string barnDoorMap" ["default.tex"] "float enableShadows" [1] "color shadowColor" [0 0 0] "float adaptiveShadows" [1] "float shadowMaxDist" [-1] "float shadowTraceBias" [-1] "string shadowSubset" [""] "string shadowExcludeSubset" [""] "float areaNormalize" [1] "string __group" [""] "float intensity" [1] "__instanceid" ["renderman/Clay render preset/shaders/PxrStdAreaLightShape1_rfm_0"]
+					Attribute "user" "int shader_bindingstrength" [0]
+				IfEnd 
+				Attribute "visibility" "int camera" [0]
+				Attribute "visibility" "int indirect" [0] "int transmission" [0]
+				ShadingRate 5
+				Sides 1
+				Attribute "dice" "string offscreenstrategy" ["sphericalprojection"]
+				ReverseOrientation 
+				Geometry "rectlight" 
+			AttributeEnd 
+			Illuminate "PxrStdAreaLightShape1" 1
+			AttributeBegin 
+				Attribute "identifier" "string name" ["groundPlane_transform"]
+				ConcatTransform [ 12 0 0 0  0 2.66454e-015 12 0  0 -1 2.22045e-016 0  0 0 0 1 ]
+				AttributeBegin 
+				AttributeEnd 
+			AttributeEnd 
+			AttributeBegin 
+				Attribute "identifier" "string name" ["Manipulator1"]
+				ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+			AttributeEnd 
+			AttributeBegin 
+				Attribute "identifier" "string name" ["UniversalManip"]
+				ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+			AttributeEnd 
+			AttributeBegin 
+			AttributeEnd 
+			AttributeBegin 
+			AttributeEnd 
+			AttributeBegin 
+			AttributeEnd 
+			AttributeBegin 
+			AttributeEnd 
+			AttributeBegin 
+				Attribute "identifier" "string name" ["Clay_render_preset:Caesar_Final_Base_with_UVs:ZBrushPolyMesh3D"]
+				Attribute "identifier" "float id" [17]
+				ConcatTransform [ 34.2949 0 0 0  0 34.2949 0 0  0 0 34.2949 0  0 36.4047 0 1 ]
+				AttributeBegin 
+				AttributeEnd 
+				AttributeBegin 
+				AttributeEnd 
+			AttributeEnd 
+			AttributeBegin 
+				Attribute "identifier" "string name" ["Clay_render_preset:pSphere1"]
+				Attribute "identifier" "float id" [24]
+				ConcatTransform [ 0.0682395 0 0 0  0 0.0682395 0 0  0 0 0.0682395 0  4.48103 43.6801 12.5522 1 ]
+				AttributeBegin 
+				AttributeEnd 
+			AttributeEnd 
+			AttributeBegin 
+				Attribute "identifier" "string name" ["Clay_render_preset:pSphere2"]
+				Attribute "identifier" "float id" [25]
+				ConcatTransform [ 0.0682395 0 0 0  0 0.0682395 0 0  0 0 0.0682395 0  -4.48056 43.6801 12.5522 1 ]
+				AttributeBegin 
+				AttributeEnd 
+			AttributeEnd 
+			AttributeBegin 
+				Attribute "identifier" "string name" ["Clay_render_preset:pPlane1"]
+				Attribute "identifier" "float id" [23]
+				ConcatTransform [ 1.86695 0 0 0  0 1.86695 0 0  0 0 1.86695 0  0 0 -255.647 1 ]
+				AttributeBegin 
+					AttributeBegin 
+						Attribute "identifier" "string name" ["Clay_render_preset:pPlaneShape1"]
+						Attribute "identifier" "float id" [53]
+						Sides 2
+						ShadingInterpolation "smooth"
+						Attribute "user" "int receivesShadows" [1]
+						Attribute "visibility" "int camera" [1] "int indirect" [1] "int transmission" [1]
+						Attribute "shade" "string transmissionhitmode" ["shader"]
+						Attribute "grouping" "string membership" ["+reflection,refraction,shadow"]
+						##RLF Inject SurfaceShading -attribute sets@,PxrLMDiffuse1SG,
+						TransformBegin 
+							Procedural2 "DelayedReadArchive2" "SimpleBound" "string filename" ["renderman/Clay render preset/rib/job/staticGeoCache_masterLayer.job.zip!renderman/Clay render preset/rib/job/Clay_render_preset_pPlaneShape1_masterLayer.job.rib"] "float[6] bound" [-335.352 335.352 -7.65878e-014 208.747 -84.8612 222.759] "int __immediatesubdivide" [0]
+						TransformEnd 
+					AttributeEnd 
+				AttributeEnd 
+			AttributeEnd 
+			AttributeBegin 
+				Attribute "identifier" "string name" ["Clay_render_preset:pSphere3"]
+				Attribute "identifier" "float id" [26]
+				ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 -3.20808 0 1 ]
+				AttributeBegin 
+				AttributeEnd 
+			AttributeEnd 
+			AttributeBegin 
+				Attribute "identifier" "string name" ["Clay_render_preset:camera1"]
+				Attribute "identifier" "float id" [22]
+				ConcatTransform [ 0.968583 -8.67362e-019 0.24869 0  -0.0130154 0.99863 0.0506917 0  -0.248349 -0.052336 0.967256 0  -4.23134 28.9736 32.2254 1 ]
+				AttributeBegin 
+				AttributeEnd 
+			AttributeEnd 
+			AttributeBegin 
+				Attribute "identifier" "string name" ["Clay_render_preset:Turn_Table_Chattersaurus:Neck_to_Tail_group"]
+				Attribute "identifier" "float id" [18]
+				ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+			AttributeEnd 
+			AttributeBegin 
+				Attribute "identifier" "string name" ["Clay_render_preset:Turn_Table_Chattersaurus:nurbsSquare1"]
+				Attribute "identifier" "float id" [20]
+				ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  8.5 0 -4.5 1 ]
+			AttributeEnd 
+			AttributeBegin 
+				Attribute "identifier" "string name" ["Clay_render_preset:Turn_Table_Chattersaurus:nurbsSquare2"]
+				Attribute "identifier" "float id" [21]
+				ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  9.5 0 -4.5 1 ]
+			AttributeEnd 
+			AttributeBegin 
+			AttributeEnd 
+			AttributeBegin 
+				Attribute "identifier" "string name" ["Caesar_Sculpture_Rigged1:First_pedestal"]
+				Attribute "identifier" "float id" [4]
+				ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+				AttributeBegin 
+					Attribute "identifier" "string name" ["Caesar_Sculpture_Rigged1:pCube1"]
+					Attribute "identifier" "float id" [14]
+					ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+					AttributeBegin 
+						AttributeBegin 
+							Attribute "identifier" "string name" ["Caesar_Sculpture_Rigged1:pCubeShape1"]
+							Attribute "identifier" "float id" [47]
+							Sides 2
+							ShadingInterpolation "smooth"
+							Attribute "user" "int receivesShadows" [1]
+							Attribute "visibility" "int camera" [1] "int indirect" [1] "int transmission" [1]
+							Attribute "shade" "string transmissionhitmode" ["shader"]
+							Attribute "grouping" "string membership" ["+reflection,refraction,shadow"]
+							##RLF Inject SurfaceShading -attribute sets@,initialShadingGroup,
+							TransformBegin 
+								Procedural2 "DelayedReadArchive2" "SimpleBound" "string filename" ["renderman/Clay render preset/rib/job/staticGeoCache_masterLayer.job.zip!renderman/Clay render preset/rib/job/Caesar_Sculpture_Rigged1_pCubeShape1_masterLayer.job.rib"] "float[6] bound" [-3.95921 3.97022 9.20997 15.9269 -3.9635 3.9635] "int __immediatesubdivide" [0]
+							TransformEnd 
+						AttributeEnd 
+					AttributeEnd 
+				AttributeEnd 
+				AttributeBegin 
+					Attribute "identifier" "string name" ["Caesar_Sculpture_Rigged1:pCylinder1"]
+					Attribute "identifier" "float id" [15]
+					ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+					AttributeBegin 
+						AttributeBegin 
+							Attribute "identifier" "string name" ["Caesar_Sculpture_Rigged1:pCylinderShape1"]
+							Attribute "identifier" "float id" [48]
+							Sides 2
+							ShadingInterpolation "smooth"
+							Attribute "user" "int receivesShadows" [1]
+							Attribute "visibility" "int camera" [1] "int indirect" [1] "int transmission" [1]
+							Attribute "shade" "string transmissionhitmode" ["shader"]
+							Attribute "grouping" "string membership" ["+reflection,refraction,shadow"]
+							##RLF Inject SurfaceShading -attribute sets@,initialShadingGroup,
+							TransformBegin 
+								Procedural2 "DelayedReadArchive2" "SimpleBound" "string filename" ["renderman/Clay render preset/rib/job/staticGeoCache_masterLayer.job.zip!renderman/Clay render preset/rib/job/Caesar_Sculpture_Rigged1_pCylinderShape1_masterLayer.job.rib"] "float[6] bound" [-6.58536 6.63191 0.185341 9.20997 -6.6217 6.6217] "int __immediatesubdivide" [0]
+							TransformEnd 
+						AttributeEnd 
+					AttributeEnd 
+				AttributeEnd 
+			AttributeEnd 
+			AttributeBegin 
+			AttributeEnd 
+			AttributeBegin 
+			AttributeEnd 
+			AttributeBegin 
+			AttributeEnd 
+			AttributeBegin 
+				Attribute "identifier" "string name" ["Caesar_Sculpture_Rigged1:Whole_Base_Head"]
+				Attribute "identifier" "float id" [9]
+				ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+				AttributeBegin 
+					Attribute "identifier" "string name" ["Caesar_Sculpture_Rigged1:Base"]
+					Attribute "identifier" "float id" [1]
+					ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+					AttributeBegin 
+						AttributeBegin 
+							Attribute "identifier" "string name" ["Caesar_Sculpture_Rigged1:BaseShape"]
+							Attribute "identifier" "float id" [36]
+							Sides 2
+							ShadingInterpolation "smooth"
+							Attribute "user" "int receivesShadows" [1]
+							Attribute "visibility" "int camera" [1] "int indirect" [1] "int transmission" [1]
+							Attribute "shade" "string transmissionhitmode" ["shader"]
+							Attribute "grouping" "string membership" ["+reflection,refraction,shadow"]
+							##RLF Inject SurfaceShading -attribute sets@,PxrDisney1SG,
+							TransformBegin 
+								Procedural2 "DelayedReadArchive2" "SimpleBound" "string filename" ["renderman/Clay render preset/rib/0001/deformingGeoCache_masterLayer.0001.zip!renderman/Clay render preset/rib/0001/Caesar_Sculpture_Rigged1_BaseShape_masterLayer.0001.rib"] "float[6] bound" [-7.85671 7.8561 10.5252 39.3944 -8.47964 10.3209] "int __immediatesubdivide" [0]
+							TransformEnd 
+						AttributeEnd 
+					AttributeEnd 
+					AttributeBegin 
+					AttributeEnd 
+				AttributeEnd 
+			AttributeEnd 
+			AttributeBegin 
+				Attribute "identifier" "string name" ["Caesar_Sculpture_Rigged1:nurbsCircle1"]
+				Attribute "identifier" "float id" [13]
+				ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 10.1063 0 1 ]
+				AttributeBegin 
+				AttributeEnd 
+				AttributeBegin 
+					Attribute "identifier" "string name" ["Caesar_Sculpture_Rigged1:joint2"]
+					Attribute "identifier" "float id" [12]
+					ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 12.8937 0 1 ]
+					AttributeBegin 
+						Attribute "identifier" "string name" ["Caesar_Sculpture_Rigged1:Mouth_group"]
+						Attribute "identifier" "float id" [7]
+						ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 -23 0 1 ]
+						AttributeBegin 
+							Attribute "identifier" "string name" ["Caesar_Sculpture_Rigged1:bottom_teeth"]
+							Attribute "identifier" "float id" [10]
+							ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+							AttributeBegin 
+								AttributeBegin 
+									Attribute "identifier" "string name" ["Caesar_Sculpture_Rigged1:bottom_teethShape"]
+									Attribute "identifier" "float id" [44]
+									Sides 2
+									ShadingInterpolation "smooth"
+									Attribute "user" "int receivesShadows" [1]
+									Attribute "visibility" "int camera" [1] "int indirect" [1] "int transmission" [1]
+									Attribute "shade" "string transmissionhitmode" ["shader"]
+									Attribute "grouping" "string membership" ["+reflection,refraction,shadow"]
+									##RLF Inject SurfaceShading -attribute sets@,initialShadingGroup,
+									TransformBegin 
+										Procedural2 "DelayedReadArchive2" "SimpleBound" "string filename" ["renderman/Clay render preset/rib/job/staticGeoCache_masterLayer.job.zip!renderman/Clay render preset/rib/job/Caesar_Sculpture_Rigged1_bottom_teethShape_masterLayer.job.rib"] "float[6] bound" [-1.93577 1.94911 24.3757 25.8717 3.15271 8.01754] "int __immediatesubdivide" [0]
+									TransformEnd 
+								AttributeEnd 
+							AttributeEnd 
+							AttributeBegin 
+							AttributeEnd 
+						AttributeEnd 
+						AttributeBegin 
+							Attribute "identifier" "string name" ["Caesar_Sculpture_Rigged1:top_teeth"]
+							Attribute "identifier" "float id" [16]
+							ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+							AttributeBegin 
+								AttributeBegin 
+									Attribute "identifier" "string name" ["Caesar_Sculpture_Rigged1:top_teethShape"]
+									Attribute "identifier" "float id" [49]
+									Sides 2
+									ShadingInterpolation "smooth"
+									Attribute "user" "int receivesShadows" [1]
+									Attribute "visibility" "int camera" [1] "int indirect" [1] "int transmission" [1]
+									Attribute "shade" "string transmissionhitmode" ["shader"]
+									Attribute "grouping" "string membership" ["+reflection,refraction,shadow"]
+									##RLF Inject SurfaceShading -attribute sets@,initialShadingGroup,
+									TransformBegin 
+										Procedural2 "DelayedReadArchive2" "SimpleBound" "string filename" ["renderman/Clay render preset/rib/job/staticGeoCache_masterLayer.job.zip!renderman/Clay render preset/rib/job/Caesar_Sculpture_Rigged1_top_teethShape_masterLayer.job.rib"] "float[6] bound" [-2.01358 2.02706 25.2564 27.1184 4.49706 8.23132] "int __immediatesubdivide" [0]
+									TransformEnd 
+								AttributeEnd 
+							AttributeEnd 
+							AttributeBegin 
+							AttributeEnd 
+						AttributeEnd 
+						AttributeBegin 
+							Attribute "identifier" "string name" ["Caesar_Sculpture_Rigged1:Inside_mouth"]
+							Attribute "identifier" "float id" [5]
+							ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+							AttributeBegin 
+								AttributeBegin 
+									Attribute "identifier" "string name" ["Caesar_Sculpture_Rigged1:Inside_mouthShape"]
+									Attribute "identifier" "float id" [40]
+									Sides 2
+									ShadingInterpolation "smooth"
+									Attribute "user" "int receivesShadows" [1]
+									Attribute "visibility" "int camera" [1] "int indirect" [1] "int transmission" [1]
+									Attribute "shade" "string transmissionhitmode" ["shader"]
+									Attribute "grouping" "string membership" ["+reflection,refraction,shadow"]
+									##RLF Inject SurfaceShading -attribute sets@,initialShadingGroup,
+									TransformBegin 
+										Procedural2 "DelayedReadArchive2" "SimpleBound" "string filename" ["renderman/Clay render preset/rib/job/staticGeoCache_masterLayer.job.zip!renderman/Clay render preset/rib/job/Caesar_Sculpture_Rigged1_Inside_mouthShape_masterLayer.job.rib"] "float[6] bound" [-1.82707 1.82707 23.7376 27.0842 4.23538 7.78266] "int __immediatesubdivide" [0]
+									TransformEnd 
+								AttributeEnd 
+							AttributeEnd 
+							AttributeBegin 
+							AttributeEnd 
+						AttributeEnd 
+					AttributeEnd 
+					AttributeBegin 
+						Attribute "identifier" "string name" ["Caesar_Sculpture_Rigged1:Eyeballs"]
+						Attribute "identifier" "float id" [3]
+						ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 -23 0 1 ]
+						AttributeBegin 
+							AttributeBegin 
+								Attribute "identifier" "string name" ["Caesar_Sculpture_Rigged1:EyeballsShape"]
+								Attribute "identifier" "float id" [39]
+								Sides 2
+								ShadingInterpolation "smooth"
+								Attribute "user" "int receivesShadows" [1]
+								Attribute "visibility" "int camera" [1] "int indirect" [1] "int transmission" [1]
+								Attribute "shade" "string transmissionhitmode" ["shader"]
+								Attribute "grouping" "string membership" ["+reflection,refraction,shadow"]
+								##RLF Inject SurfaceShading -attribute sets@,initialShadingGroup,
+								TransformBegin 
+									Procedural2 "DelayedReadArchive2" "SimpleBound" "string filename" ["renderman/Clay render preset/rib/job/staticGeoCache_masterLayer.job.zip!renderman/Clay render preset/rib/job/Caesar_Sculpture_Rigged1_EyeballsShape_masterLayer.job.rib"] "float[6] bound" [-3.36855 3.36449 29.5376 31.7165 4.70604 6.88157] "int __immediatesubdivide" [0]
+								TransformEnd 
+							AttributeEnd 
+						AttributeEnd 
+					AttributeEnd 
+				AttributeEnd 
+			AttributeEnd 
+			AttributeBegin 
+				Attribute "identifier" "string name" ["Caesar_Sculpture_Rigged1:joint1"]
+				Attribute "identifier" "float id" [11]
+				ConcatTransform [ 2.22045e-016 1 0 0  -1 2.22045e-016 0 0  0 0 1 0  0 16 0 1 ]
+			AttributeEnd 
+			AttributeBegin 
+				Attribute "identifier" "string name" ["PxrStdAreaLight1"]
+				Attribute "identifier" "float id" [31]
+				ConcatTransform [ 2.39038 0.307814 3.83112 0  0.307814 4.4818 -0.55215 0  -3.83112 0.55215 2.34602 0  -34.6973 35.7177 22.1462 1 ]
+				AttributeBegin 
+				AttributeEnd 
+			AttributeEnd 
+			AttributeBegin 
+				Attribute "identifier" "string name" ["CubeCompass"]
+				ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+			AttributeEnd 
+			##RLF ScopeEnd -name Clay_render_preset_cameraShape1_RerenderRIS
+		WorldEnd 
+	ResourceEnd 
+	##streammarker 262
+FrameEnd 

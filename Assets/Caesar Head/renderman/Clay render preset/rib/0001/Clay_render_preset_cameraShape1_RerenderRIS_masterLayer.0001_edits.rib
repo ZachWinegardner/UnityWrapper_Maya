@@ -1,0 +1,179 @@
+##RenderMan RIB
+version 3.04
+Option "rerender" "int[2] lodrange" [0 3]
+##streammarker263
+EditBegin "attribute" "string scopename" ["Clay_render_preset:camera1"]
+Transform [ 0.968583 -8.67362e-019 0.24869 0  -0.0130154 0.99863 0.0506917 0  -0.248349 -0.052336 0.967256 0  -4.96051 28.8199 35.0653 1 ]
+EditEnd 
+##streammarker264
+EditBegin "option" 
+Identity 
+#Camera Clay_render_preset:cameraShape1
+Clipping 3.048 304800
+Projection "perspective" "fov" [54.4322]
+ScreenWindow -1 1 -0.5625 0.5625
+Shutter 0 0
+ConcatTransform [ 0.968583 -0.013015 0.24835 -6.28071e-009  1.0592e-008 0.99863 0.052336 3.74178e-010  0.24869 0.0506917 -0.967256 3.90342e-009  -3.91573 -30.6225 33.6408 1 ]
+Camera "world" "float[2] shutteropening" [0 1]
+EditEnd 
+##streammarker265
+EditBegin "attribute" "string scopename" ["Clay_render_preset:camera1"]
+Transform [ 0.968583 -8.67362e-019 0.24869 0  -0.0130154 0.99863 0.0506917 0  -0.248349 -0.052336 0.967256 0  -6.90657 28.4098 42.6447 1 ]
+EditEnd 
+##streammarker266
+EditBegin "option" 
+Identity 
+#Camera Clay_render_preset:cameraShape1
+Clipping 3.048 304800
+Projection "perspective" "fov" [54.4322]
+ScreenWindow -1 1 -0.5625 0.5625
+Shutter 0 0
+ConcatTransform [ 0.968583 -0.0130151 0.248349 4.07604e-009  -1.49602e-008 0.99863 0.0523361 2.59325e-009  0.24869 0.0506917 -0.967256 3.12563e-009  -3.91572 -30.6225 41.4767 1 ]
+Camera "world" "float[2] shutteropening" [0 1]
+EditEnd 
+##streammarker267
+EditBegin "option" 
+Identity 
+#Camera Clay_render_preset:cameraShape1
+Clipping 3.048 304800
+Projection "perspective" "fov" [54.4322]
+ScreenWindow -1 1 -0.5625 0.5625
+Shutter 0 0
+ConcatTransform [ 0.968583 -0.0130151 0.248349 4.07604e-009  -1.49602e-008 0.99863 0.0523361 2.59325e-009  0.24869 0.0506917 -0.967256 3.12563e-009  -3.91572 -30.6225 41.4767 1 ]
+Camera "world" "float[2] shutteropening" [0 1]
+EditEnd 
+##streammarker268
+EditBegin "attribute" "string scopename" ["Clay_render_preset:camera1"]
+Transform [ 0.968583 -8.67362e-019 0.24869 0  -0.0130154 0.99863 0.0506917 0  -0.248349 -0.052336 0.967256 0  -6.9063 28.3897 42.6437 1 ]
+EditEnd 
+##streammarker269
+EditBegin "option" 
+Identity 
+#Camera Clay_render_preset:cameraShape1
+Clipping 3.048 304800
+Projection "perspective" "fov" [54.4322]
+ScreenWindow -1 1 -0.5625 0.5625
+Shutter 0 0
+ConcatTransform [ 0.968583 -0.0130155 0.248349 6.0741e-009  0 0.99863 0.052336 -4.00551e-010  0.24869 0.0506917 -0.967256 2.64812e-009  -3.91572 -30.6023 41.4767 1 ]
+Camera "world" "float[2] shutteropening" [0 1]
+EditEnd 
+##streammarker270
+EditBegin "attribute" "string scopename" ["Clay_render_preset:camera1"]
+Transform [ 0.968583 -8.67362e-019 0.24869 0  -0.0130154 0.99863 0.0506917 0  -0.248349 -0.052336 0.967256 0  -6.90657 28.4098 42.6447 1 ]
+EditEnd 
+##streammarker271
+EditBegin "attribute" "string scopename" ["Clay_render_preset:camera1"]
+Transform [ 0.968583 -8.67362e-019 0.24869 0  -0.0130154 0.99863 0.0506917 0  -0.248349 -0.052336 0.967256 0  -7.40257 25.9926 42.3866 1 ]
+EditEnd 
+##streammarker272
+EditBegin "option" 
+Identity 
+#Camera Clay_render_preset:cameraShape1
+Clipping 3.048 304800
+Projection "perspective" "fov" [54.4322]
+ScreenWindow -1 1 -0.5625 0.5625
+Shutter 0 0
+ConcatTransform [ 0.968583 -0.0130157 0.24835 1.1117e-009  -1.75257e-008 0.99863 0.0523361 -1.77733e-009  0.24869 0.0506918 -0.967256 -1.52837e-009  -3.37111 -28.202 41.4767 1 ]
+Camera "world" "float[2] shutteropening" [0 1]
+EditEnd 
+##streammarker273
+EditBegin "attribute" "string scopename" ["Clay_render_preset:camera1"]
+Transform [ 0.968583 -8.67362e-019 0.24869 0  -0.0130154 0.99863 0.0506917 0  -0.248349 -0.052336 0.967256 0  -6.90657 28.4098 42.6447 1 ]
+EditEnd 
+##streammarker274
+EditBegin "attribute" "string scopename" ["Clay_render_preset:camera1"]
+Transform [ 0.968583 -8.67362e-019 0.24869 0  -0.0130154 0.99863 0.0506917 0  -0.248349 -0.052336 0.967256 0  -7.83801 24.925 42.217 1 ]
+EditEnd 
+##streammarker275
+EditBegin "option" 
+Identity 
+#Camera Clay_render_preset:cameraShape1
+Clipping 3.048 304800
+Projection "perspective" "fov" [54.4322]
+ScreenWindow -1 1 -0.5625 0.5625
+Shutter 0 0
+ConcatTransform [ 0.968583 -0.0130155 0.248349 1.85841e-010  0 0.998629 0.0523361 1.28439e-009  0.24869 0.0506918 -0.967256 -7.23805e-010  -2.90718 -27.1329 41.4767 1 ]
+Camera "world" "float[2] shutteropening" [0 1]
+EditEnd 
+##streammarker276
+EditBegin "attribute" "string scopename" ["Clay_render_preset:camera1"]
+Transform [ 0.968583 -8.67362e-019 0.24869 0  -0.0130154 0.99863 0.0506917 0  -0.248349 -0.052336 0.967256 0  -6.90657 28.4098 42.6447 1 ]
+EditEnd 
+##streammarker277
+EditBegin "attribute" "string scopename" ["Clay_render_preset:camera1"]
+Transform [ 0.968583 -8.67362e-019 0.24869 0  -0.0130154 0.99863 0.0506917 0  -0.248349 -0.052336 0.967256 0  -7.85624 24.8243 42.2069 1 ]
+EditEnd 
+##streammarker278
+EditBegin "option" 
+Identity 
+#Camera Clay_render_preset:cameraShape1
+Clipping 3.048 304800
+Projection "perspective" "fov" [54.4322]
+ScreenWindow -1 1 -0.5625 0.5625
+Shutter 0 0
+ConcatTransform [ 0.968583 -0.0130154 0.248349 1.65177e-010  9.73757e-009 0.99863 0.0523359 -2.26114e-009  0.24869 0.0506918 -0.967256 -1.46375e-009  -2.88701 -27.0321 41.4767 1 ]
+Camera "world" "float[2] shutteropening" [0 1]
+EditEnd 
+##streammarker279
+EditBegin "attribute" "string scopename" ["Clay_render_preset:camera1"]
+Transform [ 0.968583 -8.67362e-019 0.24869 0  -0.0130154 0.99863 0.0506917 0  -0.248349 -0.052336 0.967256 0  -7.87551 24.8042 42.2008 1 ]
+EditEnd 
+##streammarker280
+EditBegin "option" 
+Identity 
+#Camera Clay_render_preset:cameraShape1
+Clipping 3.048 304800
+Projection "perspective" "fov" [54.4322]
+ScreenWindow -1 1 -0.5625 0.5625
+Shutter 0 0
+ConcatTransform [ 0.968583 -0.0130154 0.248349 -1.65031e-011  -1.95388e-008 0.99863 0.0523361 1.46745e-009  0.24869 0.0506917 -0.967256 5.46807e-010  -2.86684 -27.0119 41.4767 1 ]
+Camera "world" "float[2] shutteropening" [0 1]
+EditEnd 
+##streammarker281
+EditBegin "attribute" "string scopename" ["Clay_render_preset:camera1"]
+Transform [ 0.968583 -8.67362e-019 0.24869 0  -0.0130154 0.99863 0.0506917 0  -0.248349 -0.052336 0.967256 0  -7.85624 24.8243 42.2069 1 ]
+EditEnd 
+##streammarker282
+EditBegin "attribute" "string scopename" ["Clay_render_preset:camera1"]
+Transform [ 0.968583 -8.67362e-019 0.24869 0  -0.0130154 0.99863 0.0506917 0  -0.248349 -0.052336 0.967256 0  -8.99382 22.1654 41.7709 1 ]
+EditEnd 
+##streammarker283
+EditBegin "option" 
+Identity 
+#Camera Clay_render_preset:cameraShape1
+Clipping 3.048 304800
+Projection "perspective" "fov" [54.4322]
+ScreenWindow -1 1 -0.5625 0.5625
+Shutter 0 0
+ConcatTransform [ 0.968583 -0.0130156 0.248349 1.40905e-010  2.49696e-008 0.998629 0.0523359 1.09138e-009  0.24869 0.0506917 -0.967256 -5.48791e-010  -1.67675 -24.3695 41.4767 1 ]
+Camera "world" "float[2] shutteropening" [0 1]
+EditEnd 
+##streammarker284
+EditBegin "attribute" "string scopename" ["Clay_render_preset:camera1"]
+Transform [ 0.968583 -8.67362e-019 0.24869 0  -0.0130154 0.99863 0.0506917 0  -0.248349 -0.052336 0.967256 0  -7.85624 24.8243 42.2069 1 ]
+EditEnd 
+##streammarker285
+EditBegin "attribute" "string scopename" ["Clay_render_preset:camera1"]
+Transform [ 0.968583 -8.67362e-019 0.24869 0  -0.0130154 0.99863 0.0506917 0  -0.248349 -0.052336 0.967256 0  -9.28189 21.7827 41.6763 1 ]
+EditEnd 
+##streammarker286
+EditBegin "option" 
+Identity 
+#Camera Clay_render_preset:cameraShape1
+Clipping 3.048 304800
+Projection "perspective" "fov" [54.4322]
+ScreenWindow -1 1 -0.5625 0.5625
+Shutter 0 0
+ConcatTransform [ 0.968583 -0.0130158 0.248349 1.02699e-009  1.31111e-008 0.998629 0.0523361 1.35833e-009  0.24869 0.0506917 -0.967256 9.48957e-010  -1.37418 -23.9863 41.4767 1 ]
+Camera "world" "float[2] shutteropening" [0 1]
+EditEnd 
+##streammarker287
+EditBegin "attribute" "string scopename" ["Clay_render_preset:camera1"]
+Transform [ 0.968583 -8.67362e-019 0.24869 0  -0.0130154 0.99863 0.0506917 0  -0.248349 -0.052336 0.967256 0  -7.85624 24.8243 42.2069 1 ]
+EditEnd 
+##streammarker288
+EditBegin "attribute" "string scopename" ["Clay_render_preset:camera1"]
+Transform [ 0.968583 -8.67362e-019 0.24869 0  -0.0130154 0.99863 0.0506917 0  -0.248349 -0.052336 0.967256 0  -9.28162 21.7625 41.6752 1 ]
+EditEnd 
+##streammarker289
+EditBegin "op

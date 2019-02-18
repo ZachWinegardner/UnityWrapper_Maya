@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<RenderManLookFile Version="1" Format="RenderMan Look Data" AssemblyName="Clay_render_preset_cameraShape1_RerenderRIS">
+    <InjectablePayloads>
+        <Payload Id="PxrLMDiffuse1SG" Label="" Source="1" Content="1"><![CDATA[##RenderMan RIB
+version 3.04
+IfBegin "!defined(user:shader_bindingstrength) || $user:shader_bindingstrength <= 0" 
+	Displacement "null" 
+	Bxdf "PxrLMDiffuse" "PxrLMDiffuse1" "color frontColor" [0.0694044 0.0694044 0.0694044] "color backColor" [0.0497608 0.0497608 0.0497608] "float roughness" [0.0561798] "color sheen" [0 0 0] "float translucence" [0] "color incandescence" [0 0 0] 
+		"normal bumpNormal" [0 0 0] "float presence" [1] "int inputAOV" [0] "__instanceid" ["PxrLMDiffuse1_0"]
+	VPInterior "null" 
+	Interior "null" 
+	Attribute "user" "int shader_bindingstrength" [0]
+IfEnd 
+]]></Payload>
+        <Payload Id="PxrDisney1SG" Label="" Source="1" Content="1"><![CDATA[##RenderMan RIB
+version 3.04
+IfBegin "!defined(user:shader_bindingstrength) || $user:shader_bindingstrength <= 0" 
+	Displacement "null" 
+	Pattern "PxrMayaPlacement2d" "place2dTexture3" "float[2] coverage" [1 1] "float[2] translateFrame" [0 0] "float rotateFrame" [0] "int mirrorU" [0] "int mirrorV" [0] "int stagger" [0] "int wrapU" [1] "int wrapV" [1] "float[2] repeatUV" [1 1] "float[2] offset" [0 0] "float rotateUV" [0] 
+		"float[2] noiseUV" [0 0] "__instanceid" ["place2dTexture3_0"]
+	Pattern "PxrMayaPlacement2d" "place2dTexture5" "float[2] coverage" [1 1] "float[2] translateFrame" [0 0] "float rotateFrame" [0] "int mirrorU" [0] "int mirrorV" [0] "int stagger" [0] "int wrapU" [1] "int wrapV" [1] "float[2] repeatUV" [1 1] "float[2] offset" [0 0] "float rotateUV" [0] 
+		"float[2] noiseUV" [0 0] "__instanceid" ["place2dTexture5_0"]
+	Pattern "PxrMayaFile" "file2" "string fileTextureName" ["renderman/textures/job/New UV CaesarMouth Slit Caesar 02_02-NM_u0_v0.tif.tex"] "int colorProfile" [2] "string colorSpace" [""] "int colorManagementEnabled" [0] "float preFilter" [0] "float preFilterRadius" [2] "float filterType" [3] "int useFrameExtension" [0] "int frameExtension" [1] "int frameOffset" [0] "int spriteNum" [-9999] "float __faceindex" [0] "color defaultColor" [0.214041 0.214041 0.214041] "color colorGain" [1 1 1] 
+		"color colorOffset" [0 0 0] "float alphaGain" [1] "float alphaOffset" [0] "int alphaIsLuminance" [0] "float filter" [1] "float filterOffset" [0] "int invert" [0] "reference struct manifold" ["place2dTexture3:result"] "string rman__tx2dFilter" ["1"] "float rman__tx2dSwidth" [1] "float rman__tx2dTwidth" [1] "int rman__tx2dLerp" [0] "int rman__applysRGB" [-1] 
+		"string rman__udim" ["none"] "int rman__unpremultiply" [0] "__instanceid" ["file2_0"]
+	Pattern "PxrMayaFile" "file3" "string fileTextureName" ["renderman/textures/job/Final Caesar PaintMouth Slit Caesar 02_02-TM_u0_v0.tif.tex"] "int colorProfile" [3] "string colorSpace" [""] "int colorManagementEnabled" [0] "float preFilter" [0] "float preFilterRadius" [2] "float filterType" [3] "int useFrameExtension" [0] "int frameExtension" [1] "int frameOffset" [0] "int spriteNum" [-9999] "float __faceindex" [0] "color defaultColor" [0.214041 0.214041 0.214041] "color colorGain" [1 1 1] 
+		"color colorOffset" [0 0 0] "float alphaGain" [1] "float alphaOffset" [0] "int alphaIsLuminance" [0] "float filter" [1] "float filterOffset" [0] "int invert" [0] "reference struct manifold" ["place2dTexture5:result"] "string rman__tx2dFilter" ["1"] "float rman__tx2dSwidth" [1] "float rman__tx2dTwidth" [1] "int rman__tx2dLerp" [0] "int rman__applysRGB" [-1] 
+		"string rman__udim" ["none"] "int rman__unpremultiply" [0] "__instanceid" ["file3_0"]
+	Pattern "PxrBump" "PxrBump1" "float scale" [0.25] "int disable" [0] "reference float inputBump" ["file2:outAlpha"] "string filename" [""] "int firstChannel" [0] "int atlasStyle" [0] "int invertT" [1] "float blur" [0] "int lerp" [1] "normal inputN" [0 0 1] "int reverse" [0] "__instanceid" ["PxrBump1_0"]
+	Bxdf "PxrDisney" "PxrDisney1" "reference color baseColor" ["file3:outColor"] "color emitColor" [0 0 0] "float subsurface" [0] "color subsurfaceColor" [0 0 0] "float metallic" [0] "float specular" [0.5] "float specularTint" [0] "float roughness" [0.25] "float anisotropic" [0] 
+		"float sheen" [0] "float sheenTint" [0.5] "float clearcoat" [0] "float clearcoatGloss" [1] "reference normal bumpNormal" ["PxrBump1:resultN"] "float presence" [1] "int inputAOV" [0] "__instanceid" ["PxrDisney1_0"]
+	VPInterior "null" 
+	Interior "null" 
+	Attribute "user" "int shader_bindingstrength" [0]
+IfEnd 
+]]></Payload>
+        <Payload Id="initialShadingGroup" Label="" Source="1" Content="1"><![CDATA[##RenderMan RIB
+version 3.04
+IfBegin "!defined(user:shader_bindingstrength) || $user:shader_bindingstrength <= 0" 
+	Displacement "null" 
+	VPInterior "null" 
+	Interior "null" 
+	Attribute "user" "int shader_bindingstrength" [0]
+IfEnd 
+]]></Payload>
+    </InjectablePayloads>
+    <TightBindings>
+        <Binding Key="Caesar_Sculpture_Rigged1:nurbsCircle1/Caesar_Sculpture_Rigged1:joint2/Caesar_Sculpture_Rigged1:Mouth_group/Caesar_Sculpture_Rigged1:bottom_teeth/Caesar_Sculpture_Rigged1:bottom_teethShape" PayloadId="initialShadingGroup"/>
+        <Binding Key="Clay_render_preset:pPlane1/Clay_render_preset:pPlaneShape1" PayloadId="PxrLMDiffuse1SG"/>
+        <Binding Key="Caesar_Sculpture_Rigged1:First_pedestal/Caesar_Sculpture_Rigged1:pCube1/Caesar_Sculpture_Rigged1:pCubeShape1" PayloadId="initialShadingGroup"/>
+        <Binding Key="Caesar_Sculpture_Rigged1:nurbsCircle1/Caesar_Sculpture_Rigged1:joint2/Caesar_Sculpture_Rigged1:Eyeballs/Caesar_Sculpture_Rigged1:EyeballsShape" PayloadId="initialShadingGroup"/>
+        <Binding Key="Caesar_Sculpture_Rigged1:First_pedestal/Caesar_Sculpture_Rigged1:pCylinder1/Caesar_Sculpture_Rigged1:pCylinderShape1" PayloadId="initialShadingGroup"/>
+        <Binding Key="Caesar_Sculpture_Rigged1:Whole_Base_Head/Caesar_Sculpture_Rigged1:Base/Caesar_Sculpture_Rigged1:BaseShape" PayloadId="PxrDisney1SG"/>
+        <Binding Key="Caesar_Sculpture_Rigged1:nurbsCircle1/Caesar_Sculpture_Rigged1:joint2/Caesar_Sculpture_Rigged1:Mouth_group/Caesar_Sculpture_Rigged1:Inside_mouth/Caesar_Sculpture_Rigged1:Inside_mouthShape" PayloadId="initialShadingGroup"/>
+        <Binding Key="Caesar_Sculpture_Rigged1:nurbsCircle1/Caesar_Sculpture_Rigged1:joint2/Caesar_Sculpture_Rigged1:Mouth_group/Caesar_Sculpture_Rigged1:top_teeth/Caesar_Sculpture_Rigged1:top_teethShape" PayloadId="initialShadingGroup"/>
+    </TightBindings>
+</RenderManLookFile>
